@@ -18,9 +18,8 @@ public class PBKDF2WithHmacSHA512Test {
 
 	public static void main(String[] args) throws NoSuchAlgorithmException, InvalidKeySpecException {
 		
-		Security.insertProviderAt(new BouncyCastleProvider(), 1);
-        
-        
+        //Security.insertProviderAt(new BouncyCastleProvider(), 1);
+
         Provider[] providers = Security.getProviders();
         
         System.out.println("List of Providers available");
